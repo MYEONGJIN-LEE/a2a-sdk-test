@@ -35,7 +35,7 @@ async def convert_parts(parts: list[Part], tool_context: ToolContext):
         rval.append(await convert_part(p, tool_context))
     return rval
 
-
+# TEST
 async def convert_part(part: Part, tool_context: ToolContext):
     if part.root.kind == 'text':
         return part.root.text
